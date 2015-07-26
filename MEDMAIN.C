@@ -3,7 +3,7 @@
 //---                                                           CYBROS PROJECT 1.0                                                                         ---//
 //---                                                           $   LIFE LINE   $                                                                          ---//
 //---														 MEDICAL STOCK MANAGEMENT                                                                      ---//
-//---						GAUTAM ANGHORE        HARSHIT THUKRAL          TANUJ SHRIVASTAV          SATRAJIT SAHANI                                       ---//
+//---						GAUTAM ANGHORE        HARSHIT THUKRAL          TANUJ SRIVASTAVA          SATRAJIT SAHANI                                       ---//
 //------------------------------------------------------------------------------------------------------------------------------------------------------------//
 //------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -1051,7 +1051,7 @@ int user_login_screen(FILE *uout,struct userAcc *userCurrent)
 	clearS(0);
 	base_screen("","");
 	rect(30,1,50,25,7,7);
-	write_middle(1,1,50,25,7,0,"³");
+	write_middle(1,1,50,25,7,0,"Â³");
 	write_middle(5,1,53,25,7,4,"ENTER");
 	write_middle(6,1,58,25,7,0,":LOGIN");
 	write_middle(3,1,66,25,7,4,"ESC");
@@ -2531,7 +2531,7 @@ char main_menu(int level)
 				break;
 	}
 	
-	write_middle(1,1,40,25,7,0,"³");
+	write_middle(1,1,40,25,7,0,"Â³");
 	write_middle(5,1,43,25,7,4,"ENTER");
 	write_middle(11,1,49,25,7,0,":GOTO MENU");
 	write_middle(3,1,62,25,7,4,"ESC");
@@ -2658,7 +2658,7 @@ char main_menu(int level)
 			switch(choice)
 			{
 				case 13:	rect(50,1,30,25,7,7);
-							write_middle(1,1,30,25,7,0,"³");
+							write_middle(1,1,30,25,7,0,"Â³");
 							write_middle(3,1,34,25,7,4,"A-F");
 							write_middle(11,1,38,25,7,0,":CHOICES   ");
 							write_middle(5,1,51,25,7,4,"ENTER");
@@ -2959,14 +2959,14 @@ char user_account_screen()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"USER ACCOUNTS");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 	
 	user_account_window();
@@ -2983,7 +2983,7 @@ char user_account_screen()
 				case 13:	x=35;
 							y=19;
 							rect(60,1,20,25,7,7);
-							write_middle(1,1,30,25,7,0,"³");
+							write_middle(1,1,30,25,7,0,"Â³");
 							write_middle(3,1,34,25,7,4,"A-B");
 							write_middle(11,1,38,25,7,0,":CHOICES   ");
 							write_middle(5,1,51,25,7,4,"ENTER");
@@ -3125,14 +3125,14 @@ char stock_management_screen()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"Stock Management");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 	
 	stock_management_window();
@@ -3149,7 +3149,7 @@ char stock_management_screen()
 				case 13:	x=35;
 							y=19;
 							rect(60,1,20,25,7,7);
-							write_middle(1,1,30,25,7,0,"³");
+							write_middle(1,1,30,25,7,0,"Â³");
 							write_middle(3,1,34,25,7,4,"A-C");
 							write_middle(11,1,38,25,7,0,":CHOICES   ");
 							write_middle(5,1,51,25,7,4,"ENTER");
@@ -3304,14 +3304,14 @@ char report_screen()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"Reports");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 
 	report_window();
@@ -3328,7 +3328,7 @@ char report_screen()
 				case 13:	x=35;
 							y=19;
 							rect(60,1,20,25,7,7);
-							write_middle(1,1,30,25,7,0,"³");
+							write_middle(1,1,30,25,7,0,"Â³");
 							write_middle(3,1,34,25,7,4,"A-D");
 							write_middle(11,1,38,25,7,0,":CHOICES   ");
 							write_middle(5,1,51,25,7,4,"ENTER");
@@ -3489,14 +3489,14 @@ char user_profile_log_screen_1()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"PROFILE LOG");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 
 	user_profile_log_window_1();
@@ -3514,7 +3514,7 @@ char user_profile_log_screen_1()
 				case 13:	x=35;
 							y=19;
 							rect(60,1,20,25,7,7);
-							write_middle(1,1,30,25,7,0,"³");
+							write_middle(1,1,30,25,7,0,"Â³");
 							write_middle(3,1,34,25,7,4,"A-D");
 							write_middle(11,1,38,25,7,0,":CHOICES   ");
 							write_middle(5,1,51,25,7,4,"ENTER");
@@ -3652,14 +3652,14 @@ char user_profile_log_screen_2()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"PROFILE LOG");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 
 	user_profile_log_window_2();
@@ -3677,7 +3677,7 @@ char user_profile_log_screen_2()
 				case 13:	x=35;
 							y=19;
 							rect(60,1,20,25,7,7);
-							write_middle(1,1,30,25,7,0,"³");
+							write_middle(1,1,30,25,7,0,"Â³");
 							write_middle(3,1,34,25,7,4,"A-D");
 							write_middle(11,1,38,25,7,0,":CHOICES   ");
 							write_middle(5,1,51,25,7,4,"ENTER");
@@ -3827,14 +3827,14 @@ char user_profile_log_screen_3()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"PROFILE LOG");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 
 	user_profile_log_window_3();
@@ -3852,7 +3852,7 @@ char user_profile_log_screen_3()
 				case 13:	x=35;
 							y=19;
 							rect(60,1,20,25,7,7);
-							write_middle(1,1,30,25,7,0,"³");
+							write_middle(1,1,30,25,7,0,"Â³");
 							write_middle(3,1,34,25,7,4,"A-D");
 							write_middle(11,1,38,25,7,0,":CHOICES   ");
 							write_middle(5,1,51,25,7,4,"ENTER");
@@ -4001,13 +4001,13 @@ void user_register_window()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	write_middle(13,1,2,1,7,4," ADD NEW USER ");
-	write_middle(3,1,14,1,7,0," ³ ");
+	write_middle(3,1,14,1,7,0," Â³ ");
 	write_middle(35,1,16,1,7,8," MEDICAL STORE MANAGEMENT ");
 	menu_box(45,15,10,6,1,9," [ ADD USER ] ");
 	menu_box(16,15,55,6,7,8," HELP ");
@@ -4031,14 +4031,14 @@ char *ch;
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ESC:Main Menu ³ ctrl+a:Watch Profile Log");
+	strcat(ch,"  Â³ ESC:Main Menu Â³ ctrl+a:Watch Profile Log");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"INFO:USER ACCOUNTS ");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 
 	user_display_window();
@@ -4068,14 +4068,14 @@ void med_register_screen()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ 1:Main Menu ³ 2:Logout ³ 0:Exit");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ 1:Main Menu Â³ 2:Logout Â³ 0:Exit");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"STOCK ENTRY");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 	//menu_box(45,15,10,6,1,9," [ ADD USER ] ");
 	
@@ -4120,14 +4120,14 @@ void sales_transection()
 	*ch=NULL;
 	strcpy(ch," WELCOME : ");
 	strcat(ch,userCurrent.userName);
-	strcat(ch,"  ³ ENTER:Goto Input ³ ECS:Main Menu ³ ctrl+b:Last Entry");
+	strcat(ch,"  Â³ ENTER:Goto Input Â³ ECS:Main Menu Â³ ctrl+b:Last Entry");
 	base_screen("","");
 	rect(W,1,1,25,7,7);
 	write_middle(W,1,1,25,7,0,ch);
 	rect(50,1,1,1,7,7);
 	gotoxy(1,1);
 	write_middle(19,1,2,1,7,4,"SALES TRANSACTION");
-	write_middle(3,1,20,1,7,0," ³ ");
+	write_middle(3,1,20,1,7,0," Â³ ");
 	write_middle(28,1,23,1,7,8," MEDICAL STORE MANAGEMENT ");
 
 	sales_transection_window();
